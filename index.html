@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,8 @@
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="font-[Hind_Madurai] max-w-[1920px] mx-auto">
+
+<body class="font-[Hind_Madurai] max-w-[1920px] mx-auto  bg-[#FEFBED]">
     <!-- header section -->
     <header>
         <!-- nav section -->
@@ -23,58 +25,62 @@
             </div>
 
             <div class="font-[Inter] flex items-center gap-2 md:gap-3.5 text-xs md:text-lg">
-                <div class="flex items-center gap-2 md:gap-2.5 bg-[#41FF6B]/10 px-2.5 md:px-3 py-2 md:py-2.5 rounded-full font-black" >
-                    <h2>0</h2>
-                    <img src="./assets/heart.png" alt="heart" class="w-5">
+                <div
+                    class="flex items-center gap-2 md:gap-2.5 bg-[#41FF6B]/10 px-2.5 md:px-5 py-2 md:py-2.5 rounded-full font-black">
+                    <h2 id="heartCount">0</h2>
+                    <img src="./assets/heart.png" alt="heart" class="w-5 md:w-8">
                 </div>
 
-                <div class="flex items-center gap-2 md:gap-2.5 bg-[#41FF6B]/10 px-2.5 md:px-3 py-2 md:py-2.5 rounded-full font-black" >
-                    <h2>100</h2>
-                    <img src="./assets/coin.png" alt="heart" class="w-5">
+                <div
+                    class="flex items-center gap-2 md:gap-2.5 bg-[#41FF6B]/10 px-2.5 md:px-5 py-2 md:py-2.5 rounded-full font-black">
+                    <h2 id="coinCount">100</h2>
+                    <img src="./assets/coin.png" alt="heart" class="w-5 md:w-8">
                 </div>
-                
-                <div class="bg-[#00A63E] rounded-full  py-3 md:py-3 px-2 md:px-9 text-white font-semibold">
-                    <h2><span>0</span> Copy</h2>
+
+                <div class="bg-[#00A63E] rounded-3xl  py-3 md:py-3 px-2 md:px-9 text-white font-semibold">
+                    <h2><span id="copyCount">0</span> Copy</h2>
                 </div>
             </div>
         </nav>
 
         <!-- hero section -->
         <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center py-3">
-            <div class="max-w-[93.75%] mx-auto ">                
+            <div class="max-w-[93.75%] mx-auto ">
                 <img src="./assets/logo-dark.png" alt="logo-dark" class="max-w-[92px] mx-auto">
                 <h1 class="text-4xl font-semibold my-3">জরুরি সেবা ডিরেক্টরি</h1>
-                <h3 class="text-xl font-semibold">Government Emergency Services at Your Fingertip - A Project by Government of the People's Republic of Bangladesh</h3>
+                <h3 class="text-xl font-semibold">Government Emergency Services at Your Fingertip - A Project by
+                    Government of the People's Republic of Bangladesh</h3>
             </div>
         </section>
     </header>
 
     <!-- main section -->
-    <main class="max-w-[95%] md:max-w-[93.75%] mx-auto my-12 bg-[#FEFBED] grid md:grid-cols-4 md:grid-rows-3 gap-7">
-        <!-- card section -->        
-            <section class="bg-white rounded-2xl p-8 shadow-xl">
-                <div class="flex justify-between items-center text-gray-500 text-2xl">
-                    <img src="./assets/emergency.png" alt="ambulance" class="bg-[#FFE3E2] p-2 rounded-xl max-w-10">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="my-4">
-                    <h1 class="text-xl font-bold">জাতীয় জরুরি সেবা</h1>
-                    <p class="text-lg font-light text-gray-600">National Emergency</p>
-                </div>
-                <div class="mb-4">
-                    <h1 class="text-2xl font-bold">999</h1>
-                    <p class="font-light text-gray-600 bg-gray-200 px-2 py-1 rounded-full w-fit">সার্বজনীন</p>
-                </div>
-    
-                <div class="flex gap-4">
-                    <button type="button" class="text-[#5C5C5C] px-5 py-2 border border-[#D4D6D5] rounded-lg w-full">
-                        <i class="fa-regular fa-copy"></i> Copy
-                    </button>
-                    <button type="button" class="text-white px-5 py-2 bg-[#00A63E] rounded-lg w-full">
-                        <i class="fa-solid fa-phone"></i> Call
-                    </button>
-                </div>
-            </section>        
+    <main class="max-w-[95%] md:max-w-[93.75%] mx-auto my-12 grid md:grid-cols-4 md:grid-rows-3 gap-7">
+        <!-- card section -->
+        <section class="bg-white rounded-2xl p-8 shadow-xl">
+            <div class="flex justify-between items-center text-gray-500 text-2xl">
+                <img src="./assets/emergency.png" alt="ambulance" class="bg-[#FFE3E2] p-2 rounded-xl max-w-10">                
+                    <i class="fa-regular fa-heart cursor-pointer heart"></i>               
+            </div>
+            <div class="my-4">
+                <h1 class="text-xl font-bold">জাতীয় জরুরি সেবা</h1>
+                <p class="text-lg font-light text-gray-600">National Emergency</p>
+            </div>
+            <div class="mb-4">
+                <h1 class="text-2xl font-bold" id="naEmNum">999</h1>
+                <p class="font-light text-gray-600 bg-gray-200 px-2 py-1 rounded-full w-fit">সার্বজনীন</p>
+            </div>
+
+            <div class="flex gap-4">
+                <button type="button" id="btnNaEm"
+                    class="text-[#5C5C5C] px-5 py-2 border border-[#D4D6D5] rounded-lg w-full cursor-pointer">
+                    <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button type="button" id="btnNaEmCall" class="text-white px-5 py-2 bg-[#00A63E] rounded-lg w-full cursor-pointer">
+                    <i class="fa-solid fa-phone"></i> Call
+                </button>
+            </div>
+        </section>
 
         <!-- call history section -->
         <section class=" bg-white shadow-2xl rounded-2xl p-4 md:row-span-3 md:col-start-4 md:row-start-1">
@@ -84,10 +90,14 @@
                     <h2 class="font-semibold">Call history</h2>
                 </div>
                 <div>
-                    <button type="button" class="text-white text-xl font-semibold px-9 py-3 bg-[#00A63E] rounded-full">Clear</button>
+                    <button type="button"
+                        class="text-white text-xl font-semibold px-9 py-3 bg-[#00A63E] rounded-full">Clear</button>
                 </div>
             </section>
+            <p class="font-light text-gray-600">No call history</p>
         </section>
     </main>
+    <script src="./script.js"></script>
 </body>
+
 </html>
