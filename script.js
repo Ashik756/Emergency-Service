@@ -1,5 +1,7 @@
 // "heart" ক্লাসযুক্ত সব এলিমেন্টকে সিলেক্ট করা হলো
 const hearts = document.getElementsByClassName("heart");
+//Call data 
+const callData = [];
 
 // প্রতিটি এলিমেন্টের উপর লুপ চালিয়ে লিসেনার যোগ করা হচ্ছে
 for (let i = 0; i < hearts.length; i++) {
@@ -16,7 +18,6 @@ const naEmNum = document.getElementById("naEmNum").innerText;
 document.getElementById('btnNaEm').addEventListener("click", function () {
     navigator.clipboard.writeText(naEmNum);
     const copy = parseInt(document.getElementById("copyCount").innerText);
-    console.log(copy);
     alert("নাম্বার কপি হয়েছে, 999");
     const newCopy = copy + 1;
     document.getElementById("copyCount").innerText = newCopy;
@@ -29,5 +30,14 @@ document.getElementById("btnNaEmCall").addEventListener("click", function () {
     }
     const coinCount = naEmCall - 20;
     document.getElementById("coinCount").innerText = coinCount;
+    
     alert("📞 Calling National Emergency, 999");
+    
+    const data = {
+        name: "জাতীয় জরুরি সেবা",
+        time: Date().toLocaleString()
+    }
+    callData.push(data);
+    console.log(callData);
+
 })
