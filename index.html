@@ -6,6 +6,7 @@
     <title>Emergency Service</title>
     <!-- css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo-dark.png" type="image/.png">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -16,7 +17,7 @@
     <!-- header section -->
     <header>
         <!-- nav section -->
-        <nav class="max-w-[95%] md:max-w-[93.75%] mx-auto flex justify-between py-6">
+        <nav class="max-w-[97%] md:max-w-[93.75%] mx-auto flex justify-between py-6">
             <div class="flex items-center gap-2">
                 <img src="./assets/logo.png" alt="logo" class="max-w-[50px]">
                 <h1 class="text-xl md:text-2xl font-extrabold text-[#006747] ">Emergency<br>Service</h1>
@@ -31,7 +32,7 @@
 
                 <div
                     class="flex items-center gap-2 md:gap-2.5 bg-[#41FF6B]/10 px-2.5 md:px-5 py-2 md:py-2.5 rounded-full font-black">
-                    <h2 id="coinCount">100</h2>
+                    <h2 id="coinCount">700</h2>
                     <img src="./assets/coin.png" alt="heart" class="w-5 md:w-8">
                 </div>
 
@@ -53,7 +54,7 @@
     </header>
 
     <!-- main section -->
-    <main class="max-w-[95%] md:max-w-[93.75%] mx-auto my-12 grid md:grid-cols-4 md:grid-rows-3 gap-7">
+    <main class="max-w-[95%] md:max-w-[93.75%] mx-auto my-12 grid md:grid-cols-3 lg:grid-cols-4 md:grid-rows-4 lg:grid-rows-3 gap-5 lg:gap-7">
         <!-- card section -->
          <!-- card 1 -->
         <section class="bg-white rounded-2xl p-8 shadow-xl">
@@ -318,7 +319,7 @@
         </section>
 
         <!-- call history section -->
-        <section class=" bg-white shadow-2xl rounded-2xl p-4 md:row-span-3 md:col-start-4 md:row-start-1">
+        <section class=" bg-white shadow-2xl rounded-2xl p-4 md:row-span-4 lg:row-span-3 md:col-start-3 lg:col-start-4 md:row-start-1 lg:row-start-1">
             <section class="flex justify-between items-center">
                 <div class="flex items-center gap-2.5 text-2xl">
                     <i class="fa-regular fa-clock text-[#5C5C5C]"></i>
@@ -332,7 +333,7 @@
                     </button>
                 </div>
             </section>
-            <p id="noHistory" class="font-light text-gray-600">No call history</p>
+            <p id="noHistory" class="font-light text-gray-600 ml-2 mt-2">No call history</p>
             <div id="history"> </div>
         </section>
     </main>
